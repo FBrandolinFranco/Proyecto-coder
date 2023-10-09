@@ -195,3 +195,50 @@ footer {
         margin-right: 0; 
     }
 }
+#tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    }
+    @media (min-width: 768px) {
+        #tickets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        }
+    }
+    @media (min-width: 992px) {
+        #tickets {
+        grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    #tickets .card {
+        height: 420px;
+    }
+    .tickets-bienvenida {
+        text-align: center;
+        font-family: Quicksand;
+        font-weight: bold;
+        color: #025959;
+        margin-top: 20px;
+    }
+    .eventos {
+        text-align: center;
+        font-family: Quicksand;
+        font-weight: bold;
+        color: #025959;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        .imagen-eventos{
+            max-width: 50%;
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 20px;
+            }
