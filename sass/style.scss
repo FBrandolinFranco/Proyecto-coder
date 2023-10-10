@@ -1,3 +1,6 @@
+$font-quicksand: "Quicksand", sans-serif;
+$font-weight-bold: bold;
+$font-weight-bolder: bolder;
 body{
     font-family: Quicksand, bold;
     margin: 0;
@@ -226,19 +229,29 @@ footer {
         color: #025959;
         margin-top: 20px;
     }
+    $color-eventos: #025959;
+
+    // Mixin para estilos de eventos
+    @mixin estilos-eventos {
+      text-align: center;
+      font-family: $font-quicksand;
+      font-weight: $font-weight-bolder;
+      color: $color-eventos;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    // Estilos para la sección de eventos
     .eventos {
-        text-align: center;
-        font-family: Quicksand;
-        font-weight: bold;
-        color: #025959;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        }
-        .imagen-eventos{
-            max-width: 50%;
-            float: left;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 10px;
-            margin-right: 20px;
-            }
+      @include estilos-eventos;
+    }
+    
+    // Estilos para imágenes de eventos
+    .imagen-eventos {
+      max-width: 50%;
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
